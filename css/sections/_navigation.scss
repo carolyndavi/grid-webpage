@@ -1,0 +1,105 @@
+nav {
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.left-ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav li {
+  font-size: 1.25rem;
+}
+
+.nav-item {
+  margin-right: 5em;
+}
+
+#highlight {
+  font-size: 1.25rem;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+// HOME LINK
+
+.link-home span {
+  position: relative;
+  z-index: 10;
+}
+
+.link-home span:before {
+  z-index: 5;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  left: 0;
+  display: block;
+  background: $color-green;
+  transform: translate3d(0, 5px, 0);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+}
+
+.link-home:hover span:before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(-2deg);
+}
+
+// WORK
+
+.link-work span {
+  position: relative;
+  z-index: 10;
+}
+
+.link-work span:before {
+  z-index: 5;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  left: 0;
+  display: block;
+  background: $color-green;
+  transform: translate3d(0, 5px, 0);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+}
+
+.link-work:hover span:before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(1deg);
+}
+
+// INFO
+
+.link-about span {
+  position: relative;
+  z-index: 10;
+}
+
+.link-about span:before {
+  z-index: 5;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  left: 0;
+  display: block;
+  background: $color-green;
+  transform: translate3d(0, 5px, 0);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+}
+
+.link-about:hover span:before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(-2deg);
+}

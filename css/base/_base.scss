@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 64.6%;
+  line-height: 1.5;
+  color: $color-white;
+  background: $color-dark;
+}
+
+ul li {
+  margin: 0 1.5rem 0 0;
+  list-style: none;
+}
+
+a {
+  color: $color-white;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: $color-white;
+}
+
+a.active {
+  color: $color-white;
+}
