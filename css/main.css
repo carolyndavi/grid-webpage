@@ -82,10 +82,6 @@ a.active {
   color: #fff;
 }
 
-.u-margin-left {
-  margin-left: auto !important;
-}
-
 footer {
   padding: 1rem 0;
   text-align: center;
@@ -261,5 +257,5 @@ nav li {
 
 .link-about:hover span:before {
   opacity: 1;
-  transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(-2deg);
+  transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(2deg);
 }/*# sourceMappingURL=main.css.map */
