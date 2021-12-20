@@ -1,0 +1,261 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+
+.grid > [class*=column-] {
+  margin: 0;
+  max-width: 100%;
+}
+
+.gallery .grid {
+  grid-gap: 1rem;
+}
+
+.column-xs-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+  grid-column-start: span 12;
+  grid-column-end: span 12;
+}
+
+@media (min-width: 1000px) {
+  .column-md-2 {
+    grid-column-start: span 2;
+    grid-column-end: span 2;
+    flex-basis: 20%;
+    max-width: 20%;
+  }
+
+  .column-md-4 {
+    flex-basis: 33%;
+    max-width: 33%;
+    grid-column-start: span 4;
+    grid-column-end: span 4;
+  }
+
+  .column-md-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+    grid-column-start: span 6;
+    grid-column-end: span 6;
+  }
+
+  .column-md-10 {
+    flex-basis: 83%;
+    max-width: 83%;
+    grid-column-start: span 10;
+    grid-column-end: span 10;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 64.6%;
+  line-height: 1.5;
+  color: #fff;
+  background: #111;
+}
+
+ul li {
+  margin: 0 1.5rem 0 0;
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a.active {
+  color: #fff;
+}
+
+footer {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.social li {
+  margin: 1rem;
+  display: inline-block;
+}
+
+.copyright {
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.gallery {
+  padding: 0 0 4rem 0;
+}
+
+.container {
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 71.25rem;
+  width: 100%;
+}
+
+.img-content {
+  display: none;
+}
+
+.img-container {
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.img-container:hover .img-content-hover {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+.img-content-hover {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  margin-left: -2rem;
+}
+
+.title {
+  color: #2e2e2e;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.category {
+  font-size: 1rem;
+  color: #787878;
+}
+
+nav {
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.left-ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav li {
+  font-size: 1.25rem;
+}
+
+.nav-item {
+  margin-right: 5em;
+}
+
+#highlight {
+  font-size: 1.25rem;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.link-home span {
+  position: relative;
+  z-index: 10;
+}
+
+.link-home span:before {
+  z-index: 5;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  left: 0;
+  display: block;
+  background: #709d44;
+  transform: translate3d(0, 5px, 0);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+}
+
+.link-home:hover span:before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(-2deg);
+}
+
+.link-work span {
+  position: relative;
+  z-index: 10;
+}
+
+.link-work span:before {
+  z-index: 5;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  left: 0;
+  display: block;
+  background: #709d44;
+  transform: translate3d(0, 5px, 0);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+}
+
+.link-work:hover span:before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(1deg);
+}
+
+.link-about span {
+  position: relative;
+  z-index: 10;
+}
+
+.link-about span:before {
+  z-index: 5;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  left: 0;
+  display: block;
+  background: #709d44;
+  transform: translate3d(0, 5px, 0);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+}
+
+.link-about:hover span:before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(2deg);
+}/*# sourceMappingURL=main.css.map */
