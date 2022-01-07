@@ -1,7 +1,9 @@
-const stopwatch = document.querySelector(".stopwatch");
-const startButton = document.querySelector("#play-btn");
-const pauseButton = document.querySelector("#pause-btn");
-const stopButton = document.querySelector("#stop-btn");
+('use strict');
+
+const stopwatch = document.querySelector('.stopwatch');
+const startButton = document.querySelector('#play-btn');
+const pauseButton = document.querySelector('#pause-btn');
+const stopButton = document.querySelector('#stop-btn');
 
 let milliseconds = 0;
 let seconds = 0;
@@ -46,15 +48,15 @@ function stopTimer() {
 
 function getTimer() {
   return (stopwatch.textContent =
-    (minutes < 10 ? "0" + minutes : minutes) +
-    ":" +
-    (seconds < 10 ? "0" + seconds : seconds) +
-    ":" +
-    (milliseconds < 10 ? "0" + milliseconds : milliseconds));
+    (minutes < 10 ? '0' + minutes : minutes) +
+    ':' +
+    (seconds < 10 ? '0' + seconds : seconds) +
+    ':' +
+    (milliseconds < 10 ? '0' + milliseconds : milliseconds));
 }
 
-startButton.addEventListener("click", startTimer);
-pauseButton.addEventListener("click", stopTimer);
-stopButton.addEventListener("click", resetTimer);
+startButton.addEventListener('click', startTimer);
+pauseButton.addEventListener('click', stopTimer);
+stopButton.addEventListener('click', resetTimer);
 
 feather.replace();
